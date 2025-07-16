@@ -31,6 +31,19 @@ const TranslationSite = () => {
         "Technical Translation Sample", 
         "Bio Translation Sample"
       ],
+      pricingTitle: "Pricing",
+      pricingNote: "Rates may vary based on complexity and subject matter.",
+      pricingHeaders: {
+        service: "Service",
+        rate: "Recommended Rate"
+      },
+      pricingServices: [
+        "🔹 General Translation",
+        "🔹 Technical / Marketing Translation",
+        "🔹 Resume / CV Translation",
+        "🔹 Proofreading Only",
+        "🔹 Urgent Delivery (24h)"
+      ],
       reviewsTitle: "Client Reviews",
       leaveReviewTitle: "Leave a Review",
       namePlaceholder: "Your Name",
