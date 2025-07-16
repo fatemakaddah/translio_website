@@ -1,0 +1,288 @@
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* General Styling */
+.translation-site {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content section {
+  margin-bottom: 50px;
+}
+
+.main-content h1, 
+.main-content h2 {
+  color: #2c7a7b;
+}
+
+.brand-name {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.values {
+  font-style: italic;
+  color: #555;
+}
+
+/* Header and Language Toggle */
+.site-header {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  text-align: right;
+}
+
+.lang-toggle {
+  background-color: #2c7a7b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background-color: #1a5f61;
+}
+
+/* About Me Section */
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+.about-section p {
+  max-width: 600px;
+  margin: 15px auto;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.services-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-section li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Sample Translations Section */
+.sample-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.sample-btn {
+  background-color: #f0e6d2;
+  color: #333;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.sample-btn:hover {
+  background-color: #e1d5b8;
+}
+
+/* Client Reviews Section */
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.review-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.review-card .rating {
+  color: #f9a825;
+  font-size: 1.1rem;
+}
+
+.review-card .feedback {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.review-card .name {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+}
+
+/* Leave a Review Form */
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.review-form button {
+  background-color: #2c7a7b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #1a5f61;
+}
+
+.rating-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-group label {
+  font-weight: bold;
+  min-width: 60px;
+}
+
+.rating-group select {
+  flex: 1;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25D366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* RTL (Arabic) Styling */
+.rtl {
+  text-align: right;
+}
+
+.rtl .site-header {
+  text-align: left;
+}
+
+.rtl .review-card {
+  text-align: right;
+}
+
+.rtl .review-card .name {
+  text-align: left;
+}
+
+.rtl .whatsapp-float {
+  right: auto;
+  left: 40px;
+}
+
+.rtl .rating-group {
+  flex-direction: row-reverse;
+}
+
+.rtl .sample-buttons {
+  flex-direction: row-reverse;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .brand-name {
+    font-size: 3rem;
+  }
+  
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .rtl .whatsapp-float {
+    right: auto;
+    left: 20px;
+  }
+  
+  .main-content {
+    padding: 10px;
+  }
+  
+  .sample-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sample-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
