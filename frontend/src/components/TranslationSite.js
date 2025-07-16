@@ -195,6 +195,41 @@ const TranslationSite = () => {
           </div>
         </section>
 
+        <section className="pricing-section">
+          <h2>{t.pricingTitle}</h2>
+          <p className="pricing-note">{t.pricingNote}</p>
+          <table className="pricing-table">
+            <thead>
+              <tr>
+                <th>{t.pricingHeaders.service}</th>
+                <th>{t.pricingHeaders.rate}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{t.pricingServices[0]}</td>
+                <td>$0.04 – $0.06 per word</td>
+              </tr>
+              <tr>
+                <td>{t.pricingServices[1]}</td>
+                <td>$0.06 – $0.08 per word</td>
+              </tr>
+              <tr>
+                <td>{t.pricingServices[2]}</td>
+                <td>$10 – $20 per document</td>
+              </tr>
+              <tr>
+                <td>{t.pricingServices[3]}</td>
+                <td>$0.02 – $0.03 per word</td>
+              </tr>
+              <tr className="urgent-row">
+                <td>{t.pricingServices[4]}</td>
+                <td>+25% extra on base rate</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
         <section className="reviews-section">
           <h2>{t.reviewsTitle}</h2>
           <div className="reviews-container">
